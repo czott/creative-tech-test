@@ -1,0 +1,21 @@
+//
+// Media Block
+//=========================
+
+.media {
+	&__container {
+		padding: 3% 0;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__item {
+		flex: 1 1 calc((100% - calculateRem(40)) / 3);
+		width: calc((100% - calculateRem(40)) / 3);
+		margin-right: calculateRem(20);
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "creativetechtest",
+  "version": "1.0.0",
+  "description": "Test for Creative Technology Candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czott/creative-tech-test.git"
+  },
+  "author": "Chandana Zott",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/czott/creative-tech-test/issues"
+  },
+  "homepage": "https://github.com/czott/creative-tech-test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-copy": "^1.1.0",
+    "gulp-minify-html-2": "^1.0.0",
+    "syncy": "^2.2.2"
+  }
+}

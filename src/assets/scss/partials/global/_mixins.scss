@@ -1,0 +1,43 @@
+//Calculates REMs from pixels
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+//Positioning 
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    -ms-transform: translate(-50%, 0); /* IE 9 */
+    -webkit-transform: translate(-50%, 0); /* Chrome, Safari, Opera */
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    -ms-transform: translate(0, -50%); /* IE 9 */
+    -webkit-transform: translate(0, -50%); /* Chrome, Safari, Opera */
+    transform: translate(0, -50%);
+  }
+}
+
+
+//Global Placeholders
+%container {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.container {
+  @extend %container;
+}
+
+%spacing {
+  margin-bottom: 5%;
+}

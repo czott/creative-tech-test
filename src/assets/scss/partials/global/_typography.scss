@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Typography Styles (global)
+============================================================================= */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+// Placeholders
+%header1 {
+	font-family: $font-family;
+	font-weight: $font-light;
+	text-transform: uppercase;
+	font-size: calculateRem(32);
+	line-height: calculateRem(36);
+	margin-bottom: calculateRem(30);
+	color: $color-black;
+}
+
+%header2 {
+	font-family: $font-family;
+	font-weight: $font-bold;
+	text-transform: capitalize;
+	font-size: calculateRem(20);
+	line-height: calculateRem(24);
+	margin-bottom: calculateRem(26);
+	color: $color-black;
+}
+
+%regularText {
+	font-family: $font-family;
+	font-weight: $font-medium;
+	text-transform: none;
+	font-size: calculateRem(16);
+	line-height: calculateRem(26);
+	margin-bottom: calculateRem(16);
+	color: $color-black;
+}
+
+%smallText {
+	@extend %regularText;
+	font-size: calculateRem(12);
+
+	span {
+		font-weight: $font-bold;
+		text-transform: uppercase;
+	}
+}
+
+
+
+// Headings
+h1 {
+	@extend %header1;
+}
+
+h2 {
+	@extend %header2;
+}
+
+p {
+	@extend %regularText;
+
+	&.small {
+		@extend %smallText;
+	}
+}

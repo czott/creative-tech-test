@@ -1,0 +1,22 @@
+// Import partial styles
+
+//Global
+@import "partials/global/reset";
+@import "partials/global/variables";
+@import "partials/global/mixins";
+@import "partials/global/typography";
+
+//Components
+@import "partials/components/header";
+@import "partials/components/media";
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1;
+	border-bottom: 8px solid $color-accent;
+}
