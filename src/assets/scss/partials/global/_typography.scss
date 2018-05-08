@@ -9,15 +9,15 @@
 	font-family: $font-family;
 	font-weight: $font-light;
 	text-transform: uppercase;
-	font-size: calculateRem(32);
-	line-height: calculateRem(36);
+	font-size: calculateRem(45);
+	line-height: calculateRem(50);
 	margin-bottom: calculateRem(30);
-	color: $color-black;
+	color: $color-dk-grey;
 }
 
 %header2 {
 	font-family: $font-family;
-	font-weight: $font-bold;
+	font-weight: $font-medium;
 	text-transform: capitalize;
 	font-size: calculateRem(20);
 	line-height: calculateRem(24);
@@ -30,14 +30,15 @@
 	font-weight: $font-medium;
 	text-transform: none;
 	font-size: calculateRem(16);
-	line-height: calculateRem(26);
-	margin-bottom: calculateRem(16);
-	color: $color-black;
+	line-height: calculateRem(20);
+	margin-bottom: calculateRem(12);
+	color: $color-dk-grey;
 }
 
 %smallText {
 	@extend %regularText;
 	font-size: calculateRem(12);
+	line-height: calculateRem(16);
 
 	span {
 		font-weight: $font-bold;

@@ -26,6 +26,17 @@
   }
 }
 
+//Media Query
+$tablet: '(min-width: 768px)';
+$desktop: '(min-width: 1024px)';
+$large-desktop: '(min-width: 1200px)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
 
 //Global Placeholders
 %container {
@@ -39,5 +50,9 @@
 }
 
 %spacing {
-  margin-bottom: 5%;
+  margin: 5% 0;
+
+  @include respond-to($desktop) {
+    margin: 0 0 5% 0;
+  }
 }
